@@ -1,0 +1,24 @@
+{
+  "name": "POV",
+  "version": "1.0.0",
+  "description": "POV for the last interview step",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon --exec 'npm start'"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "author": "Andrea Tarzariol",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^3.7.0",
+    "axios": "^0.23.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
