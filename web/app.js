@@ -5,6 +5,8 @@
  * node web/app.js
  *
  */
+'use strict';
+require('dotenv').config();
 const express = require("express");
 var axios = require("axios");
 var app = express();
@@ -28,7 +30,7 @@ app.get("/", (req, res) => {
  *  Send a reminder to User (via slack Webhook)
  */
 app.post("/reminder", (req, res) => {
-    var url = "https://hooks.slack.com/services/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";
+    var url = process.env.SLACK_WEBHOOK_URL;
     axios.post(url,modalReminder(req.body.order_id, req.body.employee, req.body.supplier, req.body.arrival_date)
     ).then((response) => {
         console.log("Request sent." );
