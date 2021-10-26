@@ -35,18 +35,6 @@
       "user": "U02G7D3DJ8J",
       "supplier_narme": "Siemens",
       "arrival_date": "2021-10-24"
-    },
-    {
-      "order_id": "234",
-      "user": "U02G7D3DJ8J",
-      "supplier_narme": "234",
-      "arrival_date": "2021-10-24"
-    },
-    {
-      "order_id": "123",
-      "user": "U02G7D3DJ8J",
-      "supplier_narme": "123",
-      "arrival_date": "2021-10-25"
     }
   ]
 }

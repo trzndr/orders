@@ -3,9 +3,11 @@ Orders Management System - with Slack
 This is an example of POV for Slack, 
 
 **The project is divided in 2 parts:**
-1. **_Slack app_** which can launched with:  `<npm run dev>`
-1. Simulation of the **_Admin-Orders-Management_** area, which can be launched with
+1. **Slack app** which can launched with:  `<npm run dev>`
+1. **Admin-Orders-Management** area, which has been stored under the folder **_web_**. It can be launched with
    `<node web/app.js>`
+
+The project does not include a real Database, which has been temporarily replaced by a JSON-file 
 
 Slack Manifest
 ===============
@@ -17,6 +19,18 @@ Installation
 =======
 cd orders/  
 npm install
+
+Future improvements
+====================
+
+* Workflow to send reminder (after 3-4 days) for not claimed packages
+* Tracking when an Orders has been fully deliverd (in case of multiple packages, arrived at different times)
+* Use of a real DB
+* Search of the orders status (claimed / not claimed)
+* Send a notification message to channel and multiple users
+* Delete and order (inserted by mistake)
+* Edit an existing order
+* Statistics (number of orders per week/month etc.)
 
 
 

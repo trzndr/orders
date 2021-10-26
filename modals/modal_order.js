@@ -1,6 +1,6 @@
 'use strict';
 /**
- *
+ * Modal after an order has been received
  * @param tr
  * @returns {{view: {notify_on_close: boolean, submit: {emoji: boolean, text: string, type: string}, callback_id: string, blocks: [{text: {text: string, type: string}, type: string}, {type: string}, {label: {emoji: boolean, text: string, type: string}, type: string, element: {action_id: string, placeholder: {text: string, type: string}, type: string}}, {label: {emoji: boolean, text: string, type: string}, type: string, element: {action_id: string, placeholder: {text: string, type: string}, type: string}}, {label: {emoji: boolean, text: string, type: string}, type: string, element: {action_id: string, placeholder: {emoji: boolean, text: string, type: string}, type: string}}, null], type: string, title: {emoji: boolean, text: string, type: string}, close: {emoji: boolean, text: string, type: string}}, trigger_id}}
  */

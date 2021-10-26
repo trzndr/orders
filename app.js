@@ -143,7 +143,7 @@ app.command('/orders', async ({ command, ack, payload, context ,client, say}) =>
 
         await say(`> Hey <@${command.user_name}>, here the details of the last ${command.text} Orders`);
         for(const order in ord.orders){
-            await client.chat.postMessage(messages.orderHistory(ord.orders[order], command.user_id) );
+            await client.chat.postMessage(messages.orderHistory(ord.orders[order],command.channel_id) );
         }
     }
     catch (error) {

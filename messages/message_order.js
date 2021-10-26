@@ -64,14 +64,20 @@ const orderArrived = (values, body) => {
     return my_message;
 }
 
-const orderHistory = (values, user) => {
+/**
+ * Layout for the orders-list
+ * @param values, containing the values of the order
+ * @param user, the user data
+ * @returns {{blocks: [{text: {emoji: boolean, text: string, type: string}, type: string}, {type: string}, {type: string, fields: [{text: string, type: string}, {text: string, type: string}, {text: string, type: string}], block_id: string}, {type: string}], channel, text: {}}}
+ */
+const orderHistory = (values, channel_id) => {
     const order_id = values.order_id;
     const to_user = values.user;
     const supplier_narme = values.supplier_narme;
     const arrival_date = values.arrival_date;
 
     let my_message = {
-        channel: user,
+        channel: channel_id,
         text: {}, //`Dear <@${user}>, the order <${order_id}> has arrived <${arrival_date}> from <${supplier_narme}> and is available to be picked up`
         blocks: [
             {

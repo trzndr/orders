@@ -1,6 +1,6 @@
 'use strict';
 /**
- *
+ * Home layout under the Home-tab of the Orders-App
  * @param e
  * @returns {{view: {callback_id: string, blocks: [{text: {text: string, type: string}, type: string, accessory: {action_id: string, text: {text: string, type: string}, type: string, value: string}}, {type: string}, {text: {text: string, type: string}, type: string}, {elements: [{action_id: string, style: string, text: {emoji: boolean, text: string, type: string}, type: string, value: string}, {text: {text: string, type: string}, type: string, url: string}], type: string, block_id: string}], type: string}, user_id}}
  */
