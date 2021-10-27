@@ -2,7 +2,21 @@ Orders Management System - with Slack
 ======================================================================
 This is an example of POV for Slack, 
 
-**The project is divided in 2 parts:**
+The purpose of the POV is to Digitize the internal process of the Company XYZ to approve and manage the **Purchase-Order-Request (POR)**.<br>
+In this Release we are focusing on the last part of the process, which aims to notify XYZ-Employees when an order (package) has arrived and to insert some Order-Data.    
+
+Below are the main interactions this integration offers:
+* Reception staff, who receive the orders from different Suppliers, enter order data via Slack.  
+* Then the relevant person is notified that the package is ready for collection.
+* Admin-users can send a reminder to a user to collect the package. (Webhook)
+
+Here an example of the **POR**  process:
+![](process.jpg)
+
+Project Structure
+===============
+
+The project is divided in 2 parts:
 1. **Slack app** which can launched with:  `<npm run dev>` or `<node app.js>`
 2. **Admin-Orders-Management** area. This is a simulation of the Admin-Area where the admin can send a reminder to slack using a Webhook. <br>The mini-project has been stored under the folder **_web_**. It can be launched with
    `<node web/app.js>`
