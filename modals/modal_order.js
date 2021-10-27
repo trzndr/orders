@@ -47,12 +47,12 @@ const newOrder = (tr) => {
                         "action_id": "id_order_id",
                         "placeholder": {
                             "type": "plain_text",
-                            "text": "enter here the order ID"
+                            "text": "enter here the order-ID"
                         }
                     },
                     "label": {
                         "type": "plain_text",
-                        "text": "Order ID",
+                        "text": "Order-ID",
                         "emoji": true
                     }
                 },
@@ -68,7 +68,7 @@ const newOrder = (tr) => {
                     },
                     "label": {
                         "type": "plain_text",
-                        "text": "Supplier Name (from)",
+                        "text": "Supplier",
                         "emoji": true
                     }
                 },
@@ -85,7 +85,7 @@ const newOrder = (tr) => {
                     },
                     "label": {
                         "type": "plain_text",
-                        "text": "Responsible (to)",
+                        "text": "Order Applicant",
                         "emoji": true
                     }
                 },
