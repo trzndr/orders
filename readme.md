@@ -1,4 +1,4 @@
-Orders Management System - with Slack
+Orders Management System - with Slack (POV)
 ======================================================================
 This is an example of POV for Slack, 
 
@@ -7,8 +7,8 @@ In this Release we are focusing on the last part of the process, which aims to n
 
 Below are the main interactions this integration offers:
 * Reception staff, who receive the orders from different Suppliers, enter order data via Slack.  
-* Then the relevant person is notified that the package is ready for collection.
-* Admin-users can send a reminder to a user to collect the package. (Webhook)
+* The Order Applicant will be notified that the package is ready for collection.
+* Admin-users can send a reminder to the order applicant, to collect the package. (Webhook)
 
 Here an example of the **POR**  process:
 ![](process.jpg)
@@ -21,7 +21,7 @@ The project is divided in 2 parts:
 2. **Admin-Orders-Management** area. This is a simulation of the Admin-Area where the admin can send a reminder to slack using a Webhook. <br>The mini-project has been stored under the folder **_web_**. It can be launched with
    `<node web/app.js>`
 
-* The project does not include a real Database, which has been temporarily replaced by a JSON-file 
+The project does not include a real Database, which has been temporarily replaced by a JSON-file 
 
 Slack Manifest
 ===============
@@ -31,8 +31,8 @@ For this project we used the _Socket mode_
 
 Installation
 =======
-cd orders/  
-npm install
+Go to the project path: `<cd orders/>`  
+launch it: `<npm install>`
 
 Future improvements
 ====================
